@@ -14,12 +14,10 @@
              "" :"@plugin-image.webp"
          },
          "name":{
-            "":"Snap navigation to cycle routes"/*,
-            "ru":"Test Plugin: RU language"*/
+            "":"Snap navigation to cycle routes"
          },
          "description":{
-            "":"This package provides a bicycle navigation mode to follow cycle routes."/*,
-            "ru":"This package is a test package and displays test information. RU language."*/
+            "":"This package provides a bicycle navigation mode to follow cycle routes."
          }
       },
 
@@ -50,99 +48,16 @@
             "context_menu_items" : {},
             "configure_map_items" : {},
             "route_service":"OSMAND",
-            //"renderer":"test-rendering.render.xml",
             "routing_profile":"routing-snap.xml\/bike-snap-to-route"
         }
       },
-
-     /* {
-         "type":"FILE",
-         "pluginId":"test.plugin",
-         "subtype" : "rendering_style",
-         "file":"\/rendering\/test-rendering.render.xml"
-      },*/
 
       {
          "type":"FILE",
          "pluginId":"snap-nav.plugin",
          "subtype" : "routing_config",
          "file":"\/routing\/routing-snap.xml"
-      },
+      }
 
-      /*{
-         "type":"SUGGESTED_DOWNLOADS",
-         "pluginId":"test.plugin",
-         "comment-1" : "search-type are latlon (closest by latlon), worldregion (by boundaries if name matches worldRegion downloadName as we do for default types), by default natural order, limit finds first N elements",
-         "comment-2" : "predefined scope-id are @type of indexes.xml map, srtm_map, road_map, wikimap, wikivoyage, hillshade, slope, fonts, voice, depth ",
-         "comment-3" : "names filters ignore case by name.contains(filterName)",
-         "items": [/*{
-             "scope-id" : "test-downloads",
-             "limit" : 1,
-             "search-type" : "latlon"
-         }, {
-             "scope-id" : "srtm_map",
-             "names" : [
-                 "netherlands_europe"]
-         }, {
-             "scope-id" : "wikimap",
-             "search-type" : "worldregion"
-         }]
-      },*/
-
-      {
-         "type":"NAVIGATION_ICONS",
-         "pluginId":"snap-nav.plugin",
-         "items" : [{
-            "locationIcon": {
-                 "" : "@bentley-car.png"
-            },
-            "locationIconId": "BENTLEY", 
-            "navigationIcon": {
-                 "" : "@bentley-car-moving.png"
-            },
-            "navigationIconId": "BENTLEY"
-         }]
-      }//,
-      
-      /*{
-         "type":"QUICK_ACTIONS",
-         "pluginId":"test.plugin",
-         "items": [{
-            "name": "Test quick action",
-            "actionType": "osmbug.add",
-            "params": "{\"dialog\":\"false\",\"message\":\"Message\"}"
-          }]
-      },*/
-
-      /*{
-         "type":"POI_UI_FILTERS",
-         "pluginId":"test.plugin",
-          "items": [{
-                "name": "Test Search",
-                "filterId": "test_search",
-                "acceptedTypes": "{\"sustenance\":[\"bar\",\"alpine_hut\"]}"
-            }]
-      },*/
-
-      /*{
-         "type":"MAP_SOURCES",
-         "pluginId":"test.plugin",
-         "items": [{
-            "sql": false,
-            "name": "OsmAnd (test)",
-            "minZoom": 1,
-            "maxZoom": 19,
-            "url": "https:\/\/tile.osmand.net\/hd\/{0}\/{1}\/{2}.png",
-            "ellipsoid": false,
-            "inverted_y": false,
-            "timesupported": false,
-            "expire": -1,
-            "inversiveZoom": false,
-            "ext": ".png",
-            "tileSize": 512,
-            "bitDensity": 8,
-            "avgSize": 18000
-        }]
-      }*/
    ]
 }
